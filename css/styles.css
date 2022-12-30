@@ -384,9 +384,9 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .footer-list {
     display: flex;
-    gap:120px;
     margin: 0;
-    padding: 0;   
+    padding: 0; 
+    justify-content: space-between;  
 }
 footer .logo{
     padding: 0;
@@ -436,6 +436,7 @@ footer .logo{
     width: 165px;
     height: 40px;
     border: none;
+    cursor:pointer;
 }
 .footer-sl-list {
     list-style: none;
@@ -607,22 +608,20 @@ img {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 408px;
-    height: 584px; 
     background: var(--modalbgc);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
 }   
 .modal-btn {
-    margin-left: auto;
+    position: absolute;
     width: 24px;
     height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 24px;
+    right: 24px;
     background-color: var(--footertextcol);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -644,7 +643,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    margin: 24px 0 16px 0;
+    margin: 0 0 16px 0;
     color: #2E2F42;
 }
 .modal-btn-send {
@@ -662,6 +661,7 @@ img {
     height: 56px;
     border: none;  
     margin: auto; 
+    cursor:pointer;
 }
 .reg-form-group {
 }
@@ -697,8 +697,8 @@ img {
 }
 .reg-form-icon {
     position: absolute;
-    bottom: 11px;
-    left: 16px;
+    bottom: 14px;
+    left: 18px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reg-form-comment {
@@ -730,7 +730,10 @@ img {
     margin-bottom: 24px;
 }
 .reg-form-checkbox {
-    appearance: none;
+    appearance: none;   
+}
+.reg-form-check {
+    cursor: pointer;
 }
 .uncheck {
     opacity: 1;
@@ -752,4 +755,5 @@ img {
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: #757575;
+    cursor:pointer;
 }
